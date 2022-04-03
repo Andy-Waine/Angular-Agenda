@@ -1,0 +1,11 @@
+<header class="header">
+    <!--IDEA: <h1> Typewriter effect ["take better notes with", "...."] </h1>-->
+    <h1>Angular Agenda</h1>
+    <input 
+        class="create-task" 
+        placeholder="My next task is..." 
+        [value]="text"
+        (keyup)="changeText($event)"
+        autoFocus 
+    />
+</header>
