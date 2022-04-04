@@ -4,8 +4,9 @@
     <input 
         class="create-task" 
         placeholder="My next task is..." 
+        autoFocus 
         [value]="text"
         (keyup)="changeText($event)"
-        autoFocus 
+        (keyup.enter)="addTask()"
     />
 </header>

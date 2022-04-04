@@ -6,8 +6,14 @@ import { Component } from "@angular/core";
 })
 
 export class CreateTaskComponent {
-    changeText(event: Event) {
+    text: string = '';
+
+    changeText(event: Event): void {
         const target = event.target as HTMLInputElement
-        console.log(target.value);
+        this.text = target.value;
+    }
+
+    addTask(): void {
+        console.log('addTask', this.text);
     }
 }
